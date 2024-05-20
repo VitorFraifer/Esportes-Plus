@@ -7,7 +7,7 @@ const carrossel = document.querySelector(".carrossel")
 
 var posicao = 0;
 
-var passsarcarrossel = botaoCarrossel.forEach(botao => {
+botaoCarrossel.forEach(botao => {
     botao.addEventListener("click", () => {
         if(posicao != -200){
             carrossel.style.transform = `translateX(${posicao -= 100}vw)`;
@@ -15,5 +15,5 @@ var passsarcarrossel = botaoCarrossel.forEach(botao => {
         else{
             carrossel.style.transform = `translateX(${posicao += 200}vw)`;
         }
-    });
+    })
 });
