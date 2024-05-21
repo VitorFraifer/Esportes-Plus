@@ -67,22 +67,31 @@ li{
     }
 
     .navleft{
-        width: 70%;
+        width: 60%;
     }
 
     .navright{
-        width: 30%;
+        width: 40%;
         justify-content: center;
         display: flex;
         flex-direction: column;
     }
 
     ul{
-        display: block;
+        background-color: #06121E;
+        justify-content: flex-start;
+        align-items: center;
+        flex-direction: column;
+        display: none;
         z-index: 200;
         text-align: right;
         width: 214px;
         height: 1102px;
+        position: absolute;
+        top: 80px;
+    }
 
+    li{
+        margin-top: 50px;
     }
 }
