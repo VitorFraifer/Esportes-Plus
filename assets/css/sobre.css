@@ -1,0 +1,157 @@
+.sobreSection{
+    display: flex;
+}
+
+.imagensSobre{
+    width: 39vw;
+    height: 529px;
+    margin-left: 100px;
+    margin-top: 85px;
+    border-radius: 10px;
+    position: relative;
+
+}
+
+.sobreImg1{
+    width: 19vw;
+    height: 44vh;
+    border-radius: 10px;
+    object-fit: cover;
+    position: absolute;
+    Left: 149px;
+
+}
+
+.sobreImg2{
+    width: 16vw;
+    height: 36vh;
+    border-radius: 10px;
+    object-fit: cover;
+    position: absolute;
+    Top: 230px;
+    Left: 260px;
+
+}
+
+.sobreImg3{
+    width: 21vw;
+    height: 27vh;
+    margin-top: -250px;
+    border-radius: 10px;
+    position: absolute;
+    Top: 420px;
+    Left: -50px;
+    z-index: -1;
+
+}
+
+.textoSobre{
+    width: 32vw;
+    height: 75vh;
+    margin-top: 85px;
+    margin-left: 80px;
+
+}
+
+.tituloSobre{
+    width: 146px;
+    height: 59px;
+    font-family: Montserrat;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 58.51px;
+    text-align: left;
+
+}
+
+hr{
+    width: 80px;
+    height: 5px;
+    border: none;
+    background-color: #06121E;
+
+
+}
+
+.descricaoSobre{
+    width: 464px;
+    height: 438px;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 21.94px;
+    text-align: left;
+    margin-top: 30px;
+
+
+}
+
+@media (max-width: 700px) {
+    .sobreSection{
+        flex-direction: column;
+    }
+
+    .imagensSobre{
+        margin: 0px;
+        width: 100vw;
+        height: 450px;
+    }
+
+    .sobreImg1{
+        width: 190.21px;
+        height: 212.14px;
+        top: 54px;
+        left: 150px;
+        border-radius: 10px;
+
+    }
+    .sobreImg2{
+        width: 156.68px;
+        height: 174.5px;
+        top: 241.5px;
+        left: 210px;
+        border-radius: 10px;
+
+    }
+    .sobreImg3{
+        width: 212.11px;
+        height: 131.39px;
+        top: 450px;
+        left: 19px;
+        border-radius: 10px;
+
+    }
+    .textoSobre{
+        margin-top: 0px;
+        margin-left: 20px;
+    }
+    .tituloSobre{
+        width: 73px;
+        height: 29px;
+        font-family: Montserrat;
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 29.26px;
+        text-align: left;
+
+    }
+
+    hr{
+        width: 40px;
+        height: 5px;
+
+    }
+
+    .descricaoSobre{
+        width: 90vw;
+        height: 195px;
+        font-family: Montserrat;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 14.63px;
+        text-align: left;
+        margin-top: 15px;
+
+
+    }
+}
