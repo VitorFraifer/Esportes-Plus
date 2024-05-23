@@ -1,0 +1,64 @@
+.duvidasSection{
+    display: flex;
+    text-align: center;
+    align-items: center;
+}
+
+.tituloDuvidas{
+    width: 287px;
+    height: 118px;
+    font-family: Montserrat;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 58.51px;
+    text-align: left;
+    color: #085EB3;
+
+
+}
+
+.sublinhado-duvidas{
+    width: 120px;
+    height: 5px;
+    background-color: #085EB3;
+
+
+}
+
+.dropdown{
+    width: 575px;
+    height: 64px;
+    border-radius: 10px;
+    background: linear-gradient(90deg, #085EB3 0%, #103356 100%);
+    color: white;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 19.5px;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 10px;
+    padding-right: 10px;
+    cursor: pointer;
+
+}
+
+.dropdown-text{
+    width: 550px;
+    height: 144px;
+    border-radius: 8px;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 21.94px;
+    text-align: left;
+    border: 2px solid #085EB3;
+    border-top: 0px;
+    padding: 20px;
+    margin-top: -10px;
+    display: none;
+
+
+}
