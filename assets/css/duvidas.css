@@ -13,7 +13,7 @@
     line-height: 58.51px;
     text-align: left;
     color: #085EB3;
-
+    margin-right: 20px;
 
 }
 
@@ -26,7 +26,7 @@
 }
 
 .dropdown{
-    width: 575px;
+    width: 39vw;
     height: 64px;
     border-radius: 10px;
     background: linear-gradient(90deg, #085EB3 0%, #103356 100%);
@@ -42,23 +42,45 @@
     padding-left: 10px;
     padding-right: 10px;
     cursor: pointer;
+    margin-bottom: 20px;
 
 }
 
 .dropdown-text{
-    width: 550px;
-    height: 144px;
+    width: 37vw;
+    height: 20vh;
     border-radius: 8px;
     font-family: Montserrat;
-    font-size: 18px;
+    font-size: 15px;
     font-weight: 400;
     line-height: 21.94px;
     text-align: left;
     border: 2px solid #085EB3;
     border-top: 0px;
     padding: 20px;
-    margin-top: -10px;
+    margin-top: -30px;
     display: none;
+    margin-bottom: 15px;
+    animation: slideDown .5s forwards;
 
 
 }
+
+.ondaImg{
+    width: 200px;
+    height: 100vh;
+}
+
+@keyframes slideDown{
+    from{
+        opacity: 0;
+        max-height: 0;
+    }
+
+    to{
+        opacity: 1;
+        max-height: 200px;
+    }
+
+}
+

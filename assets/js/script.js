@@ -31,14 +31,16 @@ botaoAbrirMenu.addEventListener("click", () => {
     }
 })
 
-tituloDropDown.forEach(titulo => {
+tituloDropDown.forEach((titulo, index) => {
     titulo.addEventListener("click", () => {
-        if(descricaoDropDown[0].style.display == "none"){
-            descricaoDropDown[0].style.display = "flex";
-            console.log("Função ativou")
+        if(descricaoDropDown[index].style.display == "none"){
+            descricaoDropDown[index].style.display = "flex";
+            console.log("Função ativada")
         }
         else{
-            descricaoDropDown[0].style.display = "none";
+            descricaoDropDown[index].style.display = "none";
         }
     })
 });
+
+
