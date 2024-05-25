@@ -7,6 +7,8 @@ const tituloDropDown = document.querySelectorAll(".dropdown")
 const descricaoDropDown = document.querySelectorAll(".dropdown-text")
 
 
+//Carrossel
+
 var posicao = 0;
 
 botaoCarrossel.forEach(botao => {
@@ -20,6 +22,8 @@ botaoCarrossel.forEach(botao => {
     })
 });
 
+//Navbar Mobile
+
 botaoAbrirMenu.addEventListener("click", () => {
     if(menuMobile.style.display == "none"){
         menuMobile.style.display = "flex";
@@ -30,6 +34,8 @@ botaoAbrirMenu.addEventListener("click", () => {
         mainContent.style.opacity = 1
     }
 })
+
+//Accordion List
 
 tituloDropDown.forEach((titulo, index) => {
     titulo.addEventListener("click", () => {
