@@ -5,6 +5,8 @@ const menuMobile = document.querySelector("ul");
 const mainContent = document.querySelector("main");
 const tituloDropDown = document.querySelectorAll(".dropdown")
 const descricaoDropDown = document.querySelectorAll(".dropdown-text")
+const botaoAtivarModal = document.querySelector(".botao-aitvar-modal")
+const modal = document.querySelector(".modal")
 
 
 //Carrossel
@@ -48,5 +50,12 @@ tituloDropDown.forEach((titulo, index) => {
         }
     })
 });
+
+
+//Modal
+
+botaoAtivarModal.addEventListener("click", () =>{
+    modal.style.display = "flex";
+})
 
 
