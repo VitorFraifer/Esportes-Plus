@@ -6,7 +6,9 @@ const mainContent = document.querySelector("main");
 const tituloDropDown = document.querySelectorAll(".dropdown")
 const descricaoDropDown = document.querySelectorAll(".dropdown-text")
 const botaoAtivarModal = document.querySelector(".botao-aitvar-modal")
+const botaoFecharModal = document.querySelector(".botao-fechar-modal")
 const modal = document.querySelector(".modal")
+const botoesCarroselServicos = document.querySelectorAll(".servico-slider-btn")
 
 
 //Carrossel
@@ -57,5 +59,25 @@ tituloDropDown.forEach((titulo, index) => {
 botaoAtivarModal.addEventListener("click", () =>{
     modal.style.display = "flex";
 })
+
+botaoFecharModal.addEventListener("click", () => {
+    modal.style.display = "none"
+})
+
+//Carrossel Serviços
+
+var cardsnum = 0;
+
+botoesCarroselServicos.forEach(botao => {
+    botao.addEventListener("click", () => {
+        if(posicao != -200){
+            carrossel.style.transform = `translateX(${posicao -= 100}vw)`;
+        }
+        else{
+            carrossel.style.transform = `translateX(${posicao += 200}vw)`;
+        }
+    })
+});
+
 
 

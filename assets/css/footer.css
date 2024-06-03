@@ -1,0 +1,51 @@
+footer{
+    width: 100vw;
+    height: 35vh;
+    background-color: #06121E;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+
+}
+
+/* .logo-footer{
+    width: 160px;
+    height: 36px;
+
+} */
+
+.footer-item{
+    display: flex;
+}
+
+.footer-item p{
+    width: 16vw;
+    font-family: Montserrat;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 21.94px;
+    text-align: left;
+
+}
+
+.phone-info{
+    display: flex;
+}
+
+.last-footer-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.redes-sociais img{
+    width: 2vw;
+    height: 3vh;
+
+}
+
+.redes-sociais{
+    margin-top: 10px;
+}
