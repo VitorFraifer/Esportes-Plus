@@ -1,128 +1,248 @@
-.servicosSection{
-    background: radial-gradient(50% 211.59% at 50% 50%, #103356 27.19%, #06121E 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
-    height: 100vh;
+/*https://bytewebster.com/*/
+/*https://bytewebster.com/*/
+/*https://bytewebster.com/*/
+
+
+
+
+.servicos {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
-}
-
-.cabecalho-servicos{
-    width: 100vw;
-    height: 59px;
-    margin-left: 148px;
-}
-
-.tituloServicos{
-    width: 211px;
-    font-family: Montserrat;
-    font-size: 48px;
-    font-weight: 700;
-    line-height: 58.51px;
-    text-align: left;
-    color: white;
-
-}
-
-.sublinhado-servicos{
-    width: 100px;
-    background-color: white;
-}
-
-.card-slider-conatiner{
-    width: 79vw;
-    height: 56vh;
-    display: flex;
     align-items: center;
-    margin-top: 80px;
-}
-
-.card-secundario{
-    width: 17vw;
-    height: 38vh;
+    background: radial-gradient(circle, #103356 0%, #06121E 100%);
+  }
+  .swiper {
+      max-width: 1200px;
+      width: 100%;
+      height: 550px;
+  }
+  
+  .swiper-slide {
+    width: 251px;
+    height: 315px;
+    box-shadow: 0 15px 50px rgba(0, 0, 0, 0.2);
+    filter: blur(5px);
     border-radius: 10px;
-    background-color: white;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-
-}
-
-.card-secundario h3{
-    width: 163px;
-    height: 29px;
-    font-family: Montserrat;
-    font-size: 24px;
-    font-weight: 500;
-    line-height: 29.26px;
-    text-align: center;
-
-
-}
-
-.card-principal{
-    width: 40vw;
-    height: 56vh;
-    border-radius: 10px;
-    background-color: white;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    margin-left: 20px;
-    margin-right: 20px;
-
-}
-
-.card-principal h2{
-    width: 21vw;
-    height: 8vh;
-    font-family: Montserrat;
-    font-size: 24px;
-    font-weight: 500;
-    line-height: 29.26px;
-    text-align: center;
-    margin-top: 15px;
+    background-color: #F4F4F4;
+    align-self: center;
     
-}
-
-.card-principal p{
-    width: 36vw;
-    height: 16vh;
-    font-family: Montserrat;
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 21.94px;
-    text-align: center;
-
-
-}
-
-.card-principal button{
-    width: 19vw;
-    height: 7vh;
+  }
+  .swiper-slide img {
+      width: 100%;
+      height: 100%;
+      object-fit:inherit;
+      border-radius: 10px;
+  }
+  
+  .swiper-slide-active {
+    filter: blur(0px);
+    width: 579px;
+    height: 443px;
     border-radius: 10px;
-    background: linear-gradient(92.07deg, #085EB3 1.84%, #06121E 100%);
-    font-family: Montserrat;
-    font-size: 16px;
-    font-weight: 700;
-    line-height: 19.5px;
-    text-align: center;
-    color: white;
-    border: none;
-    margin-bottom: 15px;
-    cursor: pointer;
+    background-color: white;
+   
+  }
+  
+  .swiper-pagination-bullet,
+  .swiper-pagination-bullet-active {
+    background: #fff;
+  }
+  
+  .swiper-slide span {
+    text-transform: uppercase;
+    color: #fff;
+    background: #1b7402;
+    padding: 7px 18px 7px 25px;
+    display: inline-block;
+    border-radius: 0 20px 20px 0px;
+    letter-spacing: 2px;
+    font-size: 0.8rem;
+    font-family: "Open Sans", sans-serif;
+  }
+  
+  
+  
+  /* meu CSS */
+  .servicos .sub__title {
+      font-size: 3rem;;
+      line-height: 3.5rem;
+      font-weight: 700;
+      color: #F4F4F4;
+      width: 100%;
+      align-items: start;
+  }
+  .servicos .sub__title::after {
+      content: '';
+      display: block;
+      width: 5rem;
+      height: 5px;
+      background-color: #F4F4F4;
+  }
+  .card-principal {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+  }
+  
+  .card-principal h3 {
+      font-size: 1.5rem;
+      line-height: 1.7rem;
+      font-weight: 500;
+      color: #06121E;
+      text-align: center;
+  }
+  .card-principal p {
+      font-size: 1.1rem;
+      line-height: 1.3rem;
+      color: #06121E;
+      max-width: 500px;
+      text-align: center;
+  }
+  .card-principal button {
+      padding: 1rem 7rem;
+      border-radius: 10px;
+      border: transparent;
+      background: linear-gradient(to right, #085EB3 0%, #06121E 100%);
+      font-size: 1rem;
+      line-height: 1.2rem;
+      font-weight: 700;
+      color: #F4F4F4;
+      margin-top: 2rem;
+      cursor: pointer;
+  }
+  
+  
+  
+  @media (max-width: 1300px) {
+      
+      
+      .swiper-slide {
+        width: 220px;
+        height: 265px;     
+      }
+      
+      .swiper-slide-active {
+        width: 549px;
+        height: 393px;
+      }  
+      .card-principal h3 {
+          margin: 1rem 0;
+      }
+      .card-principal p {
+          max-width: 400px;
+          margin: 0;
+      }
+      .card-principal button {
+          padding: 1rem 5.5rem;
+         
+      }
+  }
+  
+  
+  @media (max-width: 950px) {
+      
+      .card-principal h3 {
+          font-size: 1.9rem;
+          line-height: 2.1rem;
+      }
+      .card-principal p {
+          max-width: 500px;
+          font-size: 1.3rem;
+          margin: 1rem 0;
+          line-height: 1.5rem;
+         
+      }
+      .card-principal button {
+          padding: 1rem 8rem;
+          margin-top: 0;
+         
+      }
+      
+      .swiper-slide {
+        height: 300px;     
+        filter: blur(0px);
+      }
+      .swiper-slide-active {
+          height: 450px;
+        }  
+  }
+  @media (max-width: 600px) {
+      .servicos .sub__title {
+          font-size: 2rem;
+          line-height: 2.5rem;
+          font-weight: 700;
+          color: #F4F4F4;
+          width: 100%;
+          align-items: start;
+          margin-top: 25px;
+      }
+      .servicos .sub__title::after {
+          content: '';
+          display: block;
+          width: 3.5rem;
+          height: 5px;
+          background-color: #F4F4F4;
+      }
+      .card-principal h3 {
+          font-size: 1.1rem;
+          line-height: 1.2rem;
+          margin: 0;
+      }
+      .card-principal p {
+          max-width: 300px;
+          font-size: .925rem;
+          margin: 2rem 0;
+          line-height: 1.05rem;
+         
+      }
+      .card-principal button {
+          padding: 1rem 5rem;
+          margin-top: 0;
+         
+      }
+      
+      .swiper-slide {
+        height: 300px;     
+        filter: blur(0px);
+      }
+      .swiper-slide-active {
+          height: 450px;
+        }  
+  }
+  
+  @media (max-width: 400px) {
+      .card-principal h3 {
+          font-size: .975rem;
+          line-height: 1.1rem;
+          margin: 0;
+      }
+      .card-principal p {
+          max-width: 250px;
+          font-size: .875rem;
+          margin: 2rem 0;
+          line-height: 1rem;
+         
+      }
+      .card-principal button {
+          padding: 1rem 5rem;
+          margin-top: 0;
+         
+      }
+      
+      .swiper{
+        width: 80vw;
+      }
 
-}
-
-.servico-slider-btn{
-    width: 11px;
-    height: 11px;
-    padding: 5px;
-    border-radius: 50%;
-    margin-right: 7px;
-    border: none;
-    cursor: pointer;
-}
-
+      .swiper-slide {
+        height: 250px;     
+        filter: blur(0px);
+      }
+      .swiper-slide-active {
+          height: 350px;
+        }  
+  }
