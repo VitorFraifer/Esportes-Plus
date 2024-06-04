@@ -18,6 +18,8 @@ footer{
 
 .footer-item{
     display: flex;
+    align-items: center;
+    margin-right: 15px;
 }
 
 .footer-item p{
@@ -27,6 +29,14 @@ footer{
     font-weight: 400;
     line-height: 21.94px;
     text-align: left;
+
+}
+
+.footer-item img{
+    width: 25px;
+    height: 18px;
+    align-self: center;
+    margin-right: 5px;
 
 }
 
@@ -48,4 +58,42 @@ footer{
 
 .redes-sociais{
     margin-top: 10px;
+}
+
+.footer-mobile{
+    display: flex;
+}
+
+@media (max-width: 400px){
+    .redes-sociais{
+        display: none;
+    }
+
+    .logo-footer{
+        width: 98px;
+        height: 22px;
+
+    }
+
+    .footer-mobile{
+        display: flex;
+        flex-direction: column;
+    }
+    .footer-item{
+        width: 182px;
+        height: 45px;
+
+    }
+    .footer-item p{
+        width: 146px;
+        height: 45px;
+        font-family: Montserrat;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 14.63px;
+        text-align: left;
+    }
+    .last-footer-item{
+        align-items: flex-start;
+    }
 }
