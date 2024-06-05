@@ -1,0 +1,57 @@
+.faleConoscoSection{
+    background: linear-gradient(180deg, #085EB3 0%, #103356 51%, #06121E 100%);
+    padding-left: 150px;
+
+}
+
+.titulo-fale-conosco{
+    width: 334px;
+    height: 59px;
+    font-family: Montserrat;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 58.51px;
+    text-align: left;
+    color: white;
+
+
+}
+
+.sublinhado-contato{
+    width: 120px;
+    height: 5px;
+    background-color: white;
+}
+
+.form-item-mini{
+    width: 280px;
+    height: 80px;
+    border-radius: 10px;
+    border: 1px;
+
+}
+
+.form-item-mini label{
+    width: 56px;
+    height: 22px;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 21.94px;
+    text-align: left;
+    color: #F4F4F4;
+
+
+}
+
+.form-item-mini input{
+    width: 280px;
+    height: 48px;
+    border-radius: 10px;
+    border: 1px;
+
+}
+
+.mini-itens{
+    display: flex;
+}
