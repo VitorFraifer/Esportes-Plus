@@ -271,8 +271,12 @@ form{
         font-weight: 600;
         line-height: 13.2px;
         text-align: center;
-        align-self: flex-end;
+        align-self: flex-start;
 
+    }
+
+    form{
+        margin-bottom: 80px;
     }
 
     .faleConosco-content{
