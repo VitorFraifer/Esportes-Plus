@@ -80,9 +80,30 @@
     border: none;
     box-shadow: 0px 4px 15px 2px #085EB380;
     margin-top: 7vh;
-    cursor: pointer
-    ;
+    cursor: pointer;
 
+}
 
+@media (max-width: 700px){
+    .modal-form{
+        width: 80vw;
+        height: 80vh;
+    }
 
+    .botao-fechar-modal{
+        align-self: end;
+        margin-right: 20px;
+    }
+
+    .modal-form label{
+        width: 60vw;
+    }
+
+    .modal-form input{
+        width: 60vw;
+    }
+
+    .modal-button{
+        width: 40vw;
+    }
 }
